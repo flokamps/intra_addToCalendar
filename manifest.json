@@ -1,0 +1,18 @@
+{
+    "name": "Intra - Add to google calendar",
+    "description": "Add a button to add an event to Google Calendar",
+    "version": "1.0",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://intra.epitech.eu/*"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "browser_action": {
+      "default_title": "intra_addtogooglecalendar"
+    },
+    "manifest_version": 2
+  }
